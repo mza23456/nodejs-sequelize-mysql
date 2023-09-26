@@ -7,9 +7,9 @@ app.use(express.json());
 
 app.use(express.urlencoded({extended: true}));
 
-var corsOptions = {
+const corsOptions = {
     origin: 'http://localhost:3000', // อนุญาตให้เฉพาะคำขอจากโดเมนนี้
-};
+  };
 
 app.use(cors(corsOptions));
 
