@@ -26,7 +26,7 @@ app.get("/", (req, res)=>{
     res.json({message: "Welcome to default route"});
 });
 
-require("./app/routes/tutorial.routes.js")(app);
+require("./app/routes/student.routes.js")(app);
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on PORT ${PORT}`);
